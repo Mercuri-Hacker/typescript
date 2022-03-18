@@ -44,14 +44,14 @@ function Signup() {
 
     return (
         <Container maxWidth="xs">
-            <Typography className={heading} variant="h3">
+            <Typography className={heading} variant="h5">
                 Sign UP Form
             </Typography>
             <form onSubmit={handleSubmit(onSubmit)} noValidate>
                 <TextField
                 {...register("name")}
                     variant="outlined"
-                    margin="normal"
+                    margin= "normal"
                     label="Name"
                     helperText={errors.name?.message}
                     error={!!errors.name?.message}
